@@ -1,5 +1,6 @@
 # Galp
 Trading platform written in Matlab for Interactive Brokers (IB) API
+
 Note: Currently this only supports FX spot trading
 
 # Introduction
