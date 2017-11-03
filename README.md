@@ -1,5 +1,6 @@
 # Galp
 Trading platform written in Matlab for Interactive Brokers (IB) API
+Note: Currently this only supports FX spot trading
 
 # Introduction
 This trading platform allows users to create their own trading strategies and trade with IB through its ActiveX API. The platform is written in Matlab, and the user-defined trading strategies should also be written in Matlab.
