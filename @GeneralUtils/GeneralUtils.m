@@ -134,7 +134,8 @@ classdef GeneralUtils
             myDataIdMap = DataIdMap.getInstance;
             [contract,barDuration,bidask,bartick] = myDataIdMap.id2details(id);
             useRTHFlag = 1;
-            ibHandle.reqRealTimeBarsEx(id,contract,GeneralUtils.ibDefaultBarDuration,bidask,useRTHFlag);
+	    % reqRealTimeBarsEx is obsolete; replaced by reqRealTimeBars
+            ibHandle.reqRealTimeBars(id,contract,GeneralUtils.ibDefaultBarDuration,bidask,useRTHFlag,cell(1,1));
         end
         
         function defaultBarDuration = ibDefaultBarDuration()
